@@ -18,7 +18,7 @@ public class Main {
         }
     }
 
-    //я могу и тут все прописать
+
     public static boolean results (String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
         if (login.length() > 20 || !login.matches("[a-zA-Z0-9_]+")) {
             throw new WrongLoginException("Неверный логин!");
